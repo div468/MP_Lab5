@@ -1,4 +1,4 @@
-package com.example.pokemonslist.network
+package com.example.pokemonslist.data.remote
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

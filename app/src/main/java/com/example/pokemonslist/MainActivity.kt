@@ -11,6 +11,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.example.pokemonslist.data.remote.RetrofitClient
+import com.example.pokemonslist.data.repository.MainRepository
 import com.example.pokemonslist.ui.screens.PokemonDetailScreen
 import com.example.pokemonslist.ui.screens.PokemonListScreen
 import com.example.pokemonslist.ui.theme.PokemonsListTheme
@@ -31,7 +33,10 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun PokemonAppNavigation() {
     val navController = rememberNavController()
-    val pokemonViewModel: PokemonViewModel = viewModel()
+    val pokemonViewModel: PokemonViewModel = viewModel {
+        val repository = MainRepository(RetrofitClient.instance)
+        PokemonViewModel(repository)
+    }
 
     NavHost(navController = navController, startDestination = "pokemon_list") {
         composable("pokemon_list") {

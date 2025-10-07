@@ -20,7 +20,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.example.pokemonslist.data.PokemonResponse
+import com.example.pokemonslist.data.repository.PokemonResponse
 import coil.compose.AsyncImage
 
 //Card for each pokemon in the list

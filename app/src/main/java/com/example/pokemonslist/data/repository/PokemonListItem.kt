@@ -1,4 +1,4 @@
-package com.example.pokemonslist.data
+package com.example.pokemonslist.data.repository
 
 data class PokemonListItem(
     val name: String,

@@ -25,7 +25,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import com.example.pokemonslist.R
-import com.example.pokemonslist.data.PokemonResponse
+import com.example.pokemonslist.data.repository.PokemonResponse
 import com.example.pokemonslist.ui.viewmodel.PokemonListUiState
 import com.example.pokemonslist.ui.viewmodel.PokemonViewModel
 
