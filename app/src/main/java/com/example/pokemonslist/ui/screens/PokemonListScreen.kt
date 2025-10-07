@@ -24,6 +24,7 @@ import com.example.pokemonslist.ui.composables.PokemonsLazyList
 import com.example.pokemonslist.ui.viewmodel.PokemonListUiState
 import com.example.pokemonslist.ui.viewmodel.PokemonViewModel
 
+//Main screen for the list of pokemons
 @Composable
 fun PokemonListScreen(
     viewModel: PokemonViewModel,

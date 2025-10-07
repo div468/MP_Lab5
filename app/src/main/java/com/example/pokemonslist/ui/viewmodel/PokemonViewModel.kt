@@ -12,6 +12,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
+//ViewModel to manage the state of the Pokemon list
 sealed interface PokemonListUiState {
     data class Success(val pokemons: List<PokemonResponse>) : PokemonListUiState
     data object Error : PokemonListUiState

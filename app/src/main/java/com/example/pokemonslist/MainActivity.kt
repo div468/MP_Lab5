@@ -18,6 +18,7 @@ import com.example.pokemonslist.ui.screens.PokemonListScreen
 import com.example.pokemonslist.ui.theme.PokemonsListTheme
 import com.example.pokemonslist.ui.viewmodel.PokemonViewModel
 
+//Main activity of the application
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

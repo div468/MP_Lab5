@@ -29,6 +29,7 @@ import com.example.pokemonslist.data.repository.PokemonResponse
 import com.example.pokemonslist.ui.viewmodel.PokemonListUiState
 import com.example.pokemonslist.ui.viewmodel.PokemonViewModel
 
+//Detailed screen for each pokemon
 @Composable
 fun PokemonDetailScreen(
     pokemonId: Int,

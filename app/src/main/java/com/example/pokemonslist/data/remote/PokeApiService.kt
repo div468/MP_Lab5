@@ -6,6 +6,7 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 import retrofit2.http.Path
 
+//Interface to define the API endpoints for the PokeAPI
 interface PokeApiService {
     @GET("pokemon/{name}")
     suspend fun getPokemon(@Path("name") name: String): PokemonResponse
