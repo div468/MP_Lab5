@@ -1,5 +1,6 @@
-package com.example.pokemonslist.data
+package com.example.pokemonslist.data.repository
 
+//Data model to represent a Pokemon list item with its name and URL images
 data class PokemonResponse (
     val name: String,
     val id: Int,

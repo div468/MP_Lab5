@@ -1,11 +1,12 @@
-package com.example.pokemonslist.network
+package com.example.pokemonslist.data.remote
 
-import com.example.pokemonslist.data.PokemonListResponse
-import com.example.pokemonslist.data.PokemonResponse
+import com.example.pokemonslist.data.repository.PokemonListResponse
+import com.example.pokemonslist.data.repository.PokemonResponse
 import retrofit2.http.GET
 import retrofit2.http.Query
 import retrofit2.http.Path
 
+//Interface to define the API endpoints for the PokeAPI
 interface PokeApiService {
     @GET("pokemon/{name}")
     suspend fun getPokemon(@Path("name") name: String): PokemonResponse
